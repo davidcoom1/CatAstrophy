@@ -15,4 +15,4 @@
 * User can type their feelings in a text box which stores it in localStorage this also take sin the users local time  , this is then accessed and displayed along with user time.
 * User ease of use has been tested, see powerpoint in recording for details
 
-# Chat GPT used for spelling corrections
+# Chat GPT used for spelling corrections and error signposting
