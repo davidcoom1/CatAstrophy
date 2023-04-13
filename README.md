@@ -1,11 +1,11 @@
 # CatAstrophy
-##CM3131 Coursework   
+## CM3131 Coursework   
 
 
 ### CatAstrophy
 # A Cat image and mental health app   
 
-#Functionality 
+# Functionality 
 
  * App utilises three screens
  * Utilises effective UI components that have clear fonts and are easy to read
