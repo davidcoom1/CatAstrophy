@@ -16,3 +16,6 @@
 * User ease of use has been tested, see powerpoint in recording for details
 
 # Chat GPT used for spelling corrections and error signposting
+
+#One drive video link
+https://liverguac-my.sharepoint.com/:v:/g/personal/d_coom_rgu_ac_uk/EdsCyYYJPa9BkDR3rg2WGfgBD2sl-k8WDVhwTPezIAvvew?e=I1nynT
