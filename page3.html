@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatAstrophy</title>
+    <!-- Get updated Ionic framework cdn -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+   <!-- Links to Local scripts  -->
+    <script src="scripts\app.js"></script>
+    
+  </head>
+  <!-- Start of the page by defining the body -->
+  <body>
+    <ion-app>
+      <ion-tabs>
+          <!-- Creates an ionic tab home element for navigation JS  -->
+        <ion-tab tab="home">
+          <ion-nav id="home-nav"></ion-nav>
+
+         <!-- Creates two cards to easily contain data and also two links -->
+            <ion-toolbar color="dark">
+              <ion-title>Cat Astrophy</ion-title>
+            </ion-toolbar>
+                <ion-content>
+                <ion-card color="danger">
+                <ion-card-header>
+                  <a href="https://www.nhs.uk/nhs-services/mental-health-services/" target="_blank">Mental health help NHS</a>
+              <ion-card-content>Good-quality sleep makes a big difference to how we feel mentally and physically, so it's important to get enough.</ion-card-content>
+                <ion-card-title>Top tips to improve your mental wellbeing</ion-card-title>
+                <ion-card-subtitle>Tips for Help</ion-card-subtitle>
+                
+              </ion-card>
+              </ion-card-header>
+
+           <ion-card color="warning">
+              <ion-card-header>
+                <a href="https://www.kidscape.org.uk/advice/advice-for-young-people/friendships-and-frenemies/how-to-make-new-friends/" target="_blank">Finding online friends</a>
+              <ion-card-content>Spending quality time with friends or family, talking to someone about how we are feeling or finding ways to help other people can all help stop you from feeling lonely and improve your mental health and wellbeing. This can be online, by phone or seeing someone in person.</ion-card-content>
+              <ion-card-title>Connect with others</ion-card-title>
+    
+             </ion-content>         
+         
+              </ion-card>
+            
+          
+          
+        </ion-tab>
+        <!-- Navigation through the webpage linking to javascript navigation method  -->
+        <ion-img id="cat-image"></ion-img>
+        <ion-tab-bar color="dark" slot="bottom">
+          <ion-tab-button button onclick="navigateToPage('page1.html')">
+            <ion-icon color="tertiary" name="search-outline"></ion-icon>
+            Feeling Input
+          </ion-tab-button>
+          <ion-tab-button button onclick="navigateToPage('page2.html')">
+            <ion-icon color="success" name="cloud-upload-outline"></ion-icon>
+            Feeling History
+          </ion-tab-button>
+          <ion-tab-button button onclick="navigateToPage('page3.html')">
+            <ion-icon color="danger" name="medkit-outline"></ion-icon>
+            Tips for Help
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-app>
+  </body>
+</html>

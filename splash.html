@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatAstrophy</title>
+    <!-- Get updated ionic framework CDN -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <!-- Link to js file -->
+    <script src="scripts\app.js"></script>
+    
+  </head>
+  <body>
+    
+    <ionic-app>
+        <ion-content>
+        
+        <!-- Put image in ion card so it auto centers image  -->
+        <ion-card color="danger"><ion-img  src="Images\catlogo.png"></ion-img>
+            <ion-card-header>
+                
+            
+              
+                <ion-card-title>Cat Mental Health App</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                Cat images can evoke positive emotions, regulate stress, and enhance mood.
+                They can foster social connection and reduce feelings of loneliness.
+                Viewing cat images can also serve as a form of mindfulness. Our app also allows users to store their feelings on a day to day basis.
+
+                <!-- Add ionic button that will navigate to page 1, this page is not able to be gotton back to unless app is restarted -->
+            <ion-button button onclick="navigateToPage('page1.html')">Go to CatAstrophy</ion-button>
+            </ion-card>
+        
+        </ionic-app>
+    </ion-content>
+  </body>
+</html>

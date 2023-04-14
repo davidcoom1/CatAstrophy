@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatAstrophy</title>
+    <!-- Get updated Ionic framework cdn -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+   <!-- Links to Local scripts  -->
+    <script src="scripts\app.js"></script>
+   
+    
+  </head>
+  <!-- Start of the page by defining the body -->
+  <body>
+    <ion-app>
+      <!-- Creates an ionic tab home element for navigation JS  -->
+      <ion-tabs>
+        <ion-tab tab="home">
+          <ion-nav id="home-nav"></ion-nav>
+
+          <ion-header>
+           <!-- Title element that will always be displayed on the top of page -->
+            <ion-toolbar color="dark">
+              <ion-title>Cat Astrophy</ion-title>
+              
+              
+            </ion-toolbar>
+          </ion-header>
+           <!-- Creates an ion card in order to easily group content -->
+          <ion-content>
+            <ion-card color="tertiary">
+              <ion-card-header>
+                <ion-card-title>How are you feeling today?</ion-card-title>
+                <ion-card-subtitle>Feeling Input</ion-card-subtitle>
+              </ion-card-header>
+              <ion-item color="tertiary">
+                
+                <ion-searchbar
+                  id="feelings"
+                  type="text"
+                  placeholder="type feelings here..."
+                ></ion-searchbar>
+                <!-- Text that is inputted in the text box when button pressed will then go to below arrays -->
+                <ion-button onclick="saveFeelings(), loadCatImage()"
+                  >Enter</ion-button
+                >
+              </ion-item>
+            </ion-card>
+            <!-- Starts another Ion card that contains a cat image which is pre defined from JS file and it then displays it with text -->
+              <ion-card color="warning">
+                <ion-card-header>
+                  <ion-card-title>Come back tomorrow</ion-card-title>
+                  <ion-img id="cat-image"></ion-img>
+                  <ion-card-subtitle>Daily Cat Reward</ion-card-subtitle>
+                </ion-card-header>
+              
+          </ion-content>
+        </ion-tab>
+        <!-- Navigation through the webpage linking to javascript navigation method  -->
+        <ion-tab-bar color="dark" slot="bottom">
+          <ion-tab-button button onclick="navigateToPage('page1.html')">
+            <ion-icon color="tertiary" name="search-outline"></ion-icon>
+            Feeling Input
+          </ion-tab-button>
+          <ion-tab-button button onclick="navigateToPage('page2.html')">
+            <ion-icon color="success" name="cloud-upload-outline"></ion-icon>
+            Feeling History
+          </ion-tab-button>
+          <ion-tab-button button onclick="navigateToPage('page3.html')">
+            <ion-icon color="danger" name="medkit-outline"></ion-icon>
+            Tips for Help
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-app>
+  </body>
+</html>
